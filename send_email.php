@@ -12,14 +12,14 @@ if (isset($_POST['send_message_btn'])) {
   $headers .= "From: $name <kislayyadav02@gmail.com>" . "\r\n";
 
   // Replace 'your_email@example.com' with the actual recipient email address
-  $to = 'kislayyadav8896@gmail.com';  
+  $to = 'rajivsinghyadavrbl@gmail.com';  
 
   // Send the email.
   $sent = mail($to, $subject, $message, $headers);
 
   if ($sent) {
     // Redirect the user to a success page.
-    header('Location: success.php');
+    echo 'success to send sms!';
   } else {
     // Display an error message if email fails to send
     echo 'Error sending email!';
