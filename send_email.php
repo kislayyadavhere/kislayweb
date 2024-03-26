@@ -9,10 +9,10 @@ if (isset($_POST['send_message_btn'])) {
   // Set the email headers.
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-  $headers .= "From: $name <$email>" . "\r\n";
+  $headers .= "From: $name <kislayyadav02@gmail.com>" . "\r\n";
 
   // Replace 'your_email@example.com' with the actual recipient email address
-  $to = 'your_email@example.com';  
+  $to = 'kislayyadav8896@gmail.com';  
 
   // Send the email.
   $sent = mail($to, $subject, $message, $headers);
